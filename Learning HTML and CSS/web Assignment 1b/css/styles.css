@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #6cb859;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navSection .navlist {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin-top: 25px;
+}
+.navbar .navSection .navlist a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+.home {
+  width: 70%;
+  margin: 0 auto;
+}
+.home ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 10px auto;
+}
+.home ul li .content {
+  background-color: #ededec;
+  margin: 10px;
+  padding: 2em 2em 5em 2em;
+}/*# sourceMappingURL=styles.css.map */
