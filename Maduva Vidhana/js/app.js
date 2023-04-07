@@ -1,19 +1,15 @@
-const getElement = (selector) => {
+const h=getElement = (selector)=>{
   const element = document.querySelector(selector)
-
-  if (element) return element
-  throw Error(
-    `Please double check your class names, there is no ${selector} class`
-  )
+  if(element) return element
 }
 
-const links = getElement('.nav-links')
-const navBtnDOM = getElement('.nav-btn')
+const links = getElement(".nav-links")
+const navbtn = getElement(".nav-btn")
 
-navBtnDOM.addEventListener('click', () => {
-  links.classList.toggle('show-links')
+navbtn.addEventListener("click",()=>{
+  links.classList.toggle("show-links")
 })
 
-const date = getElement('#date')
-const currentYear = new Date().getFullYear()
-date.textContent = currentYear
+const date = getElement("#date")
+const currYear = new Date().getFullYear()
+date.textContent = currYear
