@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 999;
+}
+
+body {
+  background-image: url("../assets/i2.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -9999;
+  background-position: center;
+}
+
+header {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  min-height: 64px;
+}
+header .menu-btn {
+  display: block;
+  margin: 10px 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 100px;
+  width: 50px;
+  z-index: 999;
+  position: absolute;
+}
+header .nav {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  z-index: 100;
+  position: relative;
+}
+header .nav.open {
+  visibility: visible;
+  display: block;
+}
+header .nav .nav-list {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding-right: 1rem;
+  margin: 0;
+  height: auto;
+}
+header .nav .nav-items {
+  list-style-type: none;
+  margin: 5px;
+}
+header .nav .nav-items a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Mr Dafoe", cursive;
+}
+header .nav .nav-items a:hover {
+  color: white;
+  font-size: 1.8em;
+}
+
+@media screen and (min-width: 660px) {
+  header .menu-btn {
+    visibility: hidden;
+  }
+  header .nav {
+    visibility: visible;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  header .nav .nav-list {
+    background: none;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 600px;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    position: unset;
+  }
+}
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  position: relative;
+}
+main .home {
+  text-align: center;
+  height: 22em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+main .home img {
+  margin-top: 50px;
+}
+main .home footer {
+  margin-top: 30px;
+}
+main .home .entertainment-icons {
+  display: flex;
+  margin: 4em 4em 0 4em;
+  justify-content: center;
+}
+main .home .entertainment-icons div {
+  margin: 0 3em;
+}
+main .home .entertainment-icons div a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  background-color: white;
+  border-radius: 50px;
+}
+main .home .entertainment-icons div a:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 35px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 919px) {
+  .icon-text {
+    display: none;
+  }
+}
+.about-body {
+  background-image: url("../assets/i1.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.about-body main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  width: 100%;
+}
+.about-body main .bio {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 300px;
+  width: 100%;
+}
+.about-body main .bio h1 {
+  color: #f6cb01;
+  text-transform: capitalize;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 3em;
+  margin: 1em 0;
+  font-weight: 500;
+}
+.about-body main .bio p {
+  color: white;
+  font-size: 1.2em;
+  margin: 0 30em 2em 30em;
+}
+.about-body main .info {
+  background-color: rgb(74, 74, 74);
+  padding: 2em 5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  width: 100%;
+}
+.about-body main .info .info-card {
+  background-color: rgb(43, 42, 42);
+  padding: 1.5em 2em;
+  color: white;
+  border-bottom: 3px solid #f6cb01;
+  width: 60%;
+  margin: 1em auto;
+}
+.about-body main .info .info-card h1 {
+  color: #f6cb01;
+}
+.about-body main footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: -30em;
+}
+.about-body main footer p {
+  transform: rotate(90deg);
+  color: white;
+}
+.about-body main footer .about-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 10em;
+  margin-left: 1.2em;
+}
+.about-body main footer .about-icons div .icons {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  background-color: white;
+  border-radius: 50px;
+}
+.about-body main footer .about-icons div .icons:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 35px rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
