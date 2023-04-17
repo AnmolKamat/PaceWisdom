@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 * {
   box-sizing: border-box;
   padding: 0;
   z-index: 999;
 }
 
-body {
+* {
+  margin: 0;
+}
+
+.home-page {
   background-image: url("../assets/i2.jpg");
   margin: 0;
   padding: 0;
@@ -148,6 +153,9 @@ main .home .entertainment-icons div a:hover {
   height: 100vh;
   background-size: cover;
 }
+.about-body header .nav .nav-list .nav-items a:hover {
+  color: #f6cb01;
+}
 .about-body main {
   display: flex;
   flex-direction: column;
@@ -214,11 +222,208 @@ main .home .entertainment-icons div a:hover {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 10px;
-  background-color: white;
+  background-color: #f6cb01;
   border-radius: 50px;
 }
 .about-body main footer .about-icons div .icons:hover {
   background-color: black;
+  color: #f6cb01;
+  box-shadow: 0 0 35px #f6cb01;
+}
+
+.design-page {
+  height: auto;
+  background: url("../assets/i3.jpg");
+  background-repeat: round;
+  background-size: contain;
+  background-position: top;
+  background-attachment: fixed;
+}
+.design-page header .nav .nav-list .nav-items a:hover {
+  color: #2c49c8;
+}
+.design-page main {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.design-page main .bio {
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 8em;
+  position: relative;
+}
+.design-page main .bio h1 {
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+  color: #142d9c;
+  font-size: 2.5em;
+  padding: 1em 2.5em;
+}
+.design-page main .bio .art {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  transform: skew(-40deg);
+  top: 0;
+  left: 30%;
+  z-index: -100;
+}
+.design-page main .info {
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  padding: 2em;
+  margin: 0em auto 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 2em;
+}
+.design-page main .info .info-card .info-text {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.design-page main .info .info-card:hover .info-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(35, 70, 227, 0.5411764706);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.design-page main .info .info-card {
+  height: 168.75px;
+  width: 300px;
+  position: relative;
+  border-bottom: 2px solid #142d9c;
+  overflow: hidden;
+}
+.design-page main .info .info-card .info-text {
+  position: absolute;
+  z-index: 1000;
+}
+.design-page main .info .info-card .info-text a {
+  text-decoration: none;
   color: white;
-  box-shadow: 0 0 35px rgb(255, 255, 255);
+}
+.design-page main .info .info-card img {
+  position: absolute;
+  height: 168.75px;
+  width: 300px;
+}
+.design-page main footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.design-page main footer .about-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 10em;
+  margin-left: 1.2em;
+}
+.design-page main footer .about-icons div .icons {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  background-color: #2346e3;
+  border-radius: 50px;
+}
+.design-page main footer .about-icons div .icons:hover {
+  background-color: black;
+  color: #2346e3;
+  box-shadow: 0 0 35px #2346e3;
+}
+.design-page main footer p {
+  transform: rotate(90deg);
+  color: white;
+}
+
+@media screen and (max-width: 1051px) {
+  .design-page main .info {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .design-page main .info {
+    grid-template-columns: auto;
+  }
+}
+.know-more-page {
+  background-image: url("../assets/8.jpg");
+  background-repeat: no-repeat;
+}
+.know-more-page header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4191877435) 0%, rgb(255, 255, 255) 34%, rgba(255, 255, 255, 0.5) 65%, rgba(11, 11, 11, 0.5) 100%);
+}
+.know-more-page header .nav .nav-list .nav-items a:hover {
+  color: #c80103;
+}
+.know-more-page main {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.know-more-page main .know-info {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 10em;
+}
+.know-more-page main .know-info .art {
+  background-color: rgba(255, 255, 255, 0.512);
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  transform: skew(-40deg);
+  top: 0;
+  left: 30%;
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.know-more-page main .know-info .art img {
+  height: 96px;
+  width: 192px;
+  transform: skew(40deg);
+}
+.know-more-page main .footer {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 1em;
+}
+.know-more-page main .footer .about-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 10em;
+  margin-left: 30px;
+}
+.know-more-page main .footer .about-icons a {
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 2em 1em 2em;
+  text-decoration: none;
+  color: #c80103;
+}
+.know-more-page main .footer .about-icons a:hover {
+  background-color: #c80103;
+  color: white;
+  box-shadow: 0 0 35px #c80103;
+}
+.know-more-page main .footer p {
+  color: white;
+  margin-right: 30px;
 }/*# sourceMappingURL=style.css.map */
