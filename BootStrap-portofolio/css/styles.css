@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  z-index: 999;
+}
+.navbar #navbarNav ul li {
+  margin-right: 1em;
+}
+
+section {
+  min-height: 700px;
+  scroll-snap-align: center;
+}
+
+#about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .row div img {
+  border-radius: 50%;
+}
+
+.skills .skill-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2em 4em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-self: center;
+  margin: 4em auto;
+  width: auto;
+}
+.skills .skill-container .skill-item {
+  height: 6em;
+  width: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills .skill-container .skill-item .skill-image {
+  height: 4.2em;
+  width: 4.2em;
+}
+.skills .skill-container .skill-item .skill-text {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

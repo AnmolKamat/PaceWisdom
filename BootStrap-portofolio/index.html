@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="https://drive.google.com/file/d/16RZ4GARqlZrXBvszWSZcAp5GUz3X5vg1/view?usp=sharing" class="btn btn-primary">Download CV</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1>Hi, I'm Anmol Kamath</h1>
+            <div id="app"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/profile.png" alt="profile Picture" style="height: 400px; width: 400px;" />
+            </div>
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    I'm a student pursuing a Bachelor of Engineering in Computer Science and Engineering. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Iste, error?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla, reiciendis odio magni veniam
+                    sequi tempora repellat sit corporis corrupti.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+        <div class="col-md-6" style="padding:0 ;">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <div class="skill-item">
+                    <img src="assets/python.svg" alt="python" class="skill-image">
+                    <p class="skill-text">Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/java.svg" alt="java" class="skill-image">
+                    <p class="skill-text">java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/javascript.svg" alt="javascript" class="skill-image">
+                    <p class="skill-text">javascript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/css.svg" alt="css" class="skill-image">
+                    <p class="skill-text">css</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/sass.svg" alt="sass" class="skill-image">
+                    <p class="skill-text">sass</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/hrml.svg" alt="html" class="skill-image">
+                    <p class="skill-text">html</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/bash.svg" alt="bash" class="skill-image">
+                    <p class="skill-text">bash</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/sql.svg" alt="sql" class="skill-image">
+                    <p class="skill-text">SQL</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- projects Section -->
+    <section id="projects" class="container" style="height: 900px;">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://anmolkamat.github.io/Simon-Game/" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/project1.png" alt="Project 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Simon Game</h5>
+                            <p class="card-text">
+                                A simple memory game which includes remembering sequence of the
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/AnmolKamat/hiasab_Kitaab" style="text-decoration: none; color: black;">
+                    <div class="card" >
+                        <img class="card-img-top" src="assets/project2.jpg" alt="Project 2"  style="height:167px ; object-fit: contain;"/>
+                        <div class="card-body">
+                            <h5 class="card-title">hiasab_Kitaab</h5>
+                            <p class="card-text">
+                                An expense manager Android Application with firebase as database
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/AnmolKamat/Torrent-Scrapper" style="text-decoration: none; color: black;">
+                    <div class="card" >
+                        <img class="card-img-top" src="assets/project3.png" alt="Torrent Scraper"  style="height:167px ; object-fit: cover;"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Torrent-Scrapper</h5>
+                            <p class="card-text">
+                                A python script to search and download things from internet
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 2em;">
+                <a href="https://github.com/AnmolKamat/ebook" style="text-decoration: none; color: black;">
+                    <div class="card" >
+                        <img class="card-img-top" src="assets/project4.png" alt="Ebook Management system"  style="height:167px ; object-fit: cover;"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Ebook Management system</h5>
+                            <p class="card-text">
+                                A webpage for ebook management system using PHP and mysql
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 2em;">
+                <a href="https://github.com/AnmolKamat/Parallax-Scrolling-effect" style="text-decoration: none; color: black;">
+                    <div class="card" >
+                        <img class="card-img-top" src="assets/project6.png" alt="paralax"  style="height:167px ; object-fit: cover;"/>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Parallax-Scrolling-effect</h5>
+                            <p class="card-text">
+                                A simple webpage with some scrolling effect using html,css and js 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="margin-top: 2em;">
+                <a href="https://github.com/AnmolKamat/YouNot" style="text-decoration: none; color: black;">
+                    <div class="card" >
+                        <img class="card-img-top" src="assets/project5.png" alt="YouNot"  style="height:167px ; object-fit: cover;"/>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                YouNot</h5>
+                            <p class="card-text">
+                                A python script to notify every time the youtube channel uploads a video 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Get in touch</h3>
+                <p>
+                    If you have any questions or would like to discuss a project, feel
+                    free to contact me using the form on the left or the information
+                    below:
+                </p>
+                <ul style="list-style-type: none;">
+                    <li><i class="bi bi-envelope-at-fill"></i> anmolrk096322@gmail.com</li>
+                    <li><i class="bi bi-geo-alt"></i> Mangaluru,Karnataka</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 AnmolKamat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-ACyJhFlOlv3q3d/Bh1sDQztGjDXULkR84xc0pmiNSXhB7yJb6eHlxDcEwzrOw7hZ"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(1000)
+  .typeString('I am a <strong> Web Developer</strong>')
+  .pauseFor(300)
+  .deleteChars(13)
+  .typeString('<strong>Gamer</strong>')
+  .pauseFor(300)
+  .deleteChars(5)
+  .typeString('<strong>programmer</strong>')
+  .pauseFor(1000)
+  .start();
+    </script>
+</body>
+
+</html>
