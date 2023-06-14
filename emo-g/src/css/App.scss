@@ -1,0 +1,127 @@
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+  margin-top: 5rem;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(44, 33, 255, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.main{
+  height: 100vh;
+  .emo-g {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 97%;
+    height: 95vh;
+    margin:1.5rem auto;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    z-index: 100;
+    h1{
+      padding-top: 5rem;
+    }
+    ul{
+      list-style-type: none;
+      width: 400px;
+      padding: 30px 0 0 5px ;
+      overflow-y: scroll;
+
+      li{
+        width: 99%;
+        text-overflow:ellipsis;
+        overflow-x: hidden;
+        padding: 10px 0;
+        margin: 0.4rem 0;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #fff;
+      z-index: 999;
+
+        span{
+          font-size: 2rem;
+          padding:0  2rem;
+        }
+
+      }
+    }
+  }
+  
+  
+}
+body {
+  background: #ecf3f3;
+}
+
+.particle {
+position: absolute;
+ border-radius: 50%;
+}
+#particle-container{
+  z-index: -10;
+}
+
+@for $i from 1 through 100 {
+  @keyframes particle-animation-#{$i} {
+    0% {
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px)) rotate(0deg);
+    }
+    100% {
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px)) rotate(360deg);
+    }
+  }
+
+  .particle:nth-child(#{$i}) {
+    animation: particle-animation-#{$i} 60s infinite;
+    $size: random(50) + 5 + px;
+    font-size: $size;
+    animation-delay: -$i * .2s;
+    transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px)) rotate(0deg);
+  }
+}

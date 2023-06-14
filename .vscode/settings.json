@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "conn",
+            "database": "${workspaceFolder:PaceWisdom}/python workshop/database.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

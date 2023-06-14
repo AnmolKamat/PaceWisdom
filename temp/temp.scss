@@ -1,27 +1,24 @@
-body{
-    margin: 100px 100px;
+body {
+    background: #ecf3f3;
+}
 
-}   
-.skill-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 2em 4em;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    .skill-item{
-        height: 3em;
-        width:3em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .skill-image{
-            height: 1.8em;
-            width: 1.8em;
-        }
-        .skill-text{
-            margin: 0;
-        }
-    }
+.particle {
+	position: absolute;
+ 	border-radius: 50%;
+}
+
+@for $i from 1 through 50 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		}
+	}
+	
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 60s infinite;
+		$size: random(50) + 5 + px;
+        font-size: $size;
+		animation-delay: -$i * .2s;
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+	}
 }
