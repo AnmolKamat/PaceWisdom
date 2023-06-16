@@ -1,0 +1,21 @@
+<div class="backdrop">
+  <div class="add-product">
+    <form id="add-product-form">
+      <div class="mb-3">
+        <label class="form-label" for="pname">Name</label>
+        <input type="text" class="form-control text-field" name="pname" id="pname" aria-describedby="emailHelp" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="pdesc">Description</label>
+        <input type="text" class="form-control" name="pdesc" id="pdesc" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="pprice">Amount</label>
+        <input type="text" class="form-control" name="pprice" id="pprice" />
+      </div>
+      <button type="submit" class="btn btn-primary" id="addBtn" name="addBtn" (click)="submitForm()">Add</button>
+      <button type="button" class="btn btn-outline-danger" id="cnclBtn" name="cnclBtn"
+        (click)="hideAdd()">Cancel</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<table class="table">
+  <thead style="position: sticky;top:0;">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Amount</th>
+      <th scope="col" class="top-right">Action</th>
+    </tr>
+  </thead>
+  <tbody id="productTable">
+    <tr *ngFor="let product of productService.readProduct()">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.desc}}</td>
+        <td>{{product.price}}</td>
+        <td (click)="deleteProduct(product.id)"><app-delete-product ></app-delete-product></td>
+    </tr>
+  </tbody>
+</table>

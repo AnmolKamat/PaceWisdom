@@ -1,0 +1,20 @@
+.table{
+  overflow-y: scroll;
+  overflow: scroll;
+  thead{
+    th{
+    background-color: #CE7777;
+    color:#F2E5E5;
+    }
+    .top-right{
+      border-top-right-radius: 5px;
+    }
+  }
+  tbody{
+    tr{
+      td{
+        background-color: #E8C4C4;
+        color: #473f3f;
+      }
+    }}
+}

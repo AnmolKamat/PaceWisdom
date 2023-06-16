@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-outline-primary add-btn" (click)="showAdd()">Add Product</button>
+<div class="container">
+  <app-sidebar></app-sidebar>
+  <app-product-list style="height: 75vh;overflow: scroll;"></app-product-list>
+  <router-outlet style="display: none;"></router-outlet>
+</div>
+<app-add-product *ngIf="this.dataService.addFlag"></app-add-product>
